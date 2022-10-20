@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Pop-up</title>
+</head>
+
+<body>
+    <div class="titre">
+        <h3>Cliquez Sur le bouton de votre choix</h3>
+    </div>
+
+    <!--  Liste des bouttons -->
+    <article class="carre-centre">
+        <div class="liste-button">
+            <button class="button button1" onclick="buttonClick(1)"> button1</button>
+            <button class="button button2" onclick="buttonClick(2)"> button2</button>
+            <button class="button button3" onclick="buttonClick(3)"> button3</button>
+        </div>
+    </article>
+
+    <!-- Popup de notification -->
+    <div class="popup" id="po_pup">
+        <div class="content" id="content">
+            <p id="text"></p>
+        </div>
+
+        <div class="liste-button">
+            <button class="button button4" onclick="closePopUp()"> Fermer</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

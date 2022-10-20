@@ -1,0 +1,21 @@
+/* Feuille de style 01:01 du 20-octobre-2022 */
+
+body {
+    background-color: #1263a5;
+}
+
+.titre {
+    color: #fff;
+    text-align: center;
+}
+
+.carre-centre {
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2%;
+}
