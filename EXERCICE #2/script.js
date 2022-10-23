@@ -10,8 +10,9 @@ function buttonClick(valueClick) {
     for (let index = 0; index < 4; index++) {
         if (index == valueClick) {
             const text = document.getElementById("text");
-            document.getElementById("content").innerHTML = "<h3>Notification</h3><span id='test'>Vous Avez cliqué sur le Bouton " + index + "</span>";
-            popup.style.display = "block";
+            document.getElementById("content").innerHTML = "<h3>Notification</h3><p><span id='test'>Vous Avez cliqué sur le Bouton " + index + "</span></p>" +
+                "<button class='button button4 margin-top' onclick='closePopUp()'> Fermer</button>";
+            popup.style.display = 'block';
             break
         }
     }
