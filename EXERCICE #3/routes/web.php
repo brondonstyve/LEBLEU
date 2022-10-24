@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\enregistrement;
+use App\Http\Controllers\userIdentification;
+use App\Http\Livewire\UserOperation;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[enregistrement::class,'index'])->name('index');
+Route::get('/',[userIdentification::class,'index'])->name('login');
+Route::get('/deconnexion',[userIdentification::class,'deconnexion'])->name('deconnexion');
+
+//pages neccessitant un accès etant connecté
+Route::middleware('auth')->group(function(){
+    Route::get('/enregistrement',[enregistrement::class,'index'])->name('enregistrement');
+});

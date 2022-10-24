@@ -108,7 +108,7 @@
           <td>{{$item->created_at}}</td>
           <td>{{$item->updated_at}}</td>
           <td>
-            <button type="button" class="btn btn-danger btn-sm" wire:click="delete({{$item->id}})"">Supprimer</button>
+            <button type="button" class="btn btn-danger btn-sm" wire:click="delete({{$item->id}})">Supprimer</button>
               <button type=" button" class="btn btn-primary btn-sm" wire:click="edit({{$item->id}})">Modifier</button>
 
           </td>
